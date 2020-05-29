@@ -34,21 +34,26 @@ body {
 }
 
 .container{
-    
+    margin: 0 auto;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 90vw;
     height: 80vh;
-
+    
+    &--datos {
+        align-items: flex-start;
+        
+        
+    }
     
 }
 
 .datos {
     display: flex;
     flex-flow: row;
-    align-items: flex-end;
+    align-items: center;
 }
 
 
@@ -71,6 +76,7 @@ body {
 .img {
     opacity: 0.4;
     margin: 0 20px;
+    cursor: pointer;
 
     &:hover{
         opacity: 1;
@@ -92,6 +98,7 @@ footer {
 
 h1 {
     color: white;
+    align-self: start;
     
 }
 
@@ -106,6 +113,29 @@ h1 {
 
     &:focus {
         outline: none;
+    }
+}
+
+.inputRange {
+    padding: 5px 20px;
+    width: 500px;
+}
+
+.question{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    color: white;
+    justify-content: space-between;;
+}
+
+.options {
+    display: flex;
+    flex-flow: row;
+    padding: 0 50px;
+
+    & div {
+        padding: 0 40px;
     }
 }
 

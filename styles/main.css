@@ -39,6 +39,7 @@ body {
 }
 
 .container {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,8 +53,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100vw;
+  width: 90vw;
   height: 80vh;
+}
+
+.container--datos {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .datos {
@@ -64,9 +71,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button {
@@ -88,6 +95,7 @@ body {
 .img {
   opacity: 0.4;
   margin: 0 20px;
+  cursor: pointer;
 }
 
 .img:hover {
@@ -113,6 +121,9 @@ footer {
 
 h1 {
   color: white;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
 }
 
 .inputText {
@@ -127,5 +138,40 @@ h1 {
 
 .inputText:focus {
   outline: none;
+}
+
+.inputRange {
+  padding: 5px 20px;
+  width: 500px;
+}
+
+.question {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  padding: 0 50px;
+}
+
+.options div {
+  padding: 0 40px;
 }
 /*# sourceMappingURL=main.css.map */
