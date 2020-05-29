@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
     let groupMembers = [];
 
     addBtn.addEventListener('click', () => {
-        if(groupMembers.length < 5) {
+        if(groupMembers.length < 4) {
             const options = document.querySelectorAll('option');
             let selectedOption;
     
