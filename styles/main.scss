@@ -59,6 +59,7 @@ body {
 
 .button {
     margin-top: 100px;
+    align-self: center;
     text-decoration: none;
     color: white;
     background-color: rgba(26, 26, 26, 0.44);
@@ -126,7 +127,7 @@ h1 {
     display: flex;
     flex-flow: row;
     color: white;
-    justify-content: space-between;;
+    justify-content: space-between;
 }
 
 .options {

@@ -78,6 +78,9 @@ body {
 
 .button {
   margin-top: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   text-decoration: none;
   color: white;
   background-color: rgba(26, 26, 26, 0.44);

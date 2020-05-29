@@ -3,38 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>La Cumbre</title>
 </head>
 <body>
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="./rutas.html">Explorar</a>
-        <a href="./perfil.html">Mi Perfil</a>
-    </nav>
-
-    <h1>Preferencias</h1>   
-
-    <div>
-        <h2>Define del 1 al 10, ¿Qué tan importante es para ti que haya zona para nadar en la caminata?</h2>
-        <input type="range" name="" id="swim" min="1" max="10" step="1" value="5">
+    <div class="header">
+        <img src="./assets/logo_line.svg" alt="logo">
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="./rutas.html">Explorar</a>
+            <a href="./perfil.html">Mi Perfil</a>
+        </nav>
     </div>
 
-    <div>
-        <h2>Define del 1 al 10, ¿Qué tan importante es para ti que haya zona de pesca en la caminata?</h2>
-        <input type="range" name="" id="fish" min="1" max="10" step="1" value="5">
+    <div class="container container--datos">
+        <h1>Preferencias</h1>   
+
+    <div class="question">
+        <p>Define del 1 al 10, ¿Qué tan importante es para ti que haya zona para nadar en la caminata?</p>
+        <input type="range" name="" id="swim" min="1" max="10" step="1" value="5" class="inputRange">
     </div>
 
-    <div>
-        <h2>Define del 1 al 10, ¿Qué tan importante es para ti que haya zona de escalada en la caminata?</h2>
-        <input type="range" name="" id="climb" min="1" max="10" step="1" value="5">
+    <div class="question">
+        <p>Define del 1 al 10, ¿Qué tan importante es para ti que haya zona de pesca en la caminata?</p>
+        <input type="range" name="" id="fish" min="1" max="10" step="1" value="5" class="inputRange">
     </div>
 
-    <div>
-        <h2>Define del 1 al 10, ¿Qué tan importante es para ti que haya un mirador en la caminata?</h2>
-        <input type="range" name="" id="watch" min="1" max="10" step="1" value="5">
+    <div class="question">
+        <p>Define del 1 al 10, ¿Qué tan importante es para ti que haya zona de escalada en la caminata?</p>
+        <input type="range" name="" id="climb" min="1" max="10" step="1" value="5" class="inputRange">
+    </div>
+
+    <div class="question">
+        <p>Define del 1 al 10, ¿Qué tan importante es para ti que haya un mirador en la caminata?</p>
+        <input type="range" name="" id="watch" min="1" max="10" step="1" value="5" class="inputRange">
     </div>     
     
-    <button>SIGUIENTE</button>
+    <button class="button">SIGUIENTE</button>
+    </div>
 
     <script src="./scritps/activities.js"></script>
 </body>
