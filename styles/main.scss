@@ -1,0 +1,142 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+}
+
+body {
+    background-image: url("../assets/bg.png");
+    background-repeat: no-repeat;
+    background-size:  cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header {
+    padding: 10px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    width: 90vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+
+    & a{
+        color: white;
+        text-decoration: none;
+        padding: 0 20px;
+    }
+    
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    height: 80vh;
+    
+    &--datos {
+        align-items: flex-start;
+        
+        
+    }
+    
+}
+
+.datos {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+
+.button {
+    margin-top: 100px;
+    align-self: center;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(26, 26, 26, 0.44);
+    padding: 15px 70px;
+    border: solid 3px white;
+    border-radius: 20px;
+    font-weight: 700;
+
+    &:hover{
+        background-color: white;
+        color: #015156;
+    }
+}
+
+.img {
+    opacity: 0.4;
+    margin: 0 20px;
+    cursor: pointer;
+
+    &:hover{
+        opacity: 1;
+    }
+
+    &--active{
+        opacity: 1;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    align-self: start;
+    
+}
+
+.inputText {
+    border: none;
+    border-bottom: solid 2px white;
+    background-color: transparent;
+    color: white;
+    padding: 5px 20px;
+    width: 500px;
+    margin: 20px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.inputRange {
+    padding: 5px 20px;
+    width: 500px;
+}
+
+.question{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    color: white;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    flex-flow: row;
+    padding: 0 50px;
+
+    & div {
+        padding: 0 40px;
+    }
+}
+
