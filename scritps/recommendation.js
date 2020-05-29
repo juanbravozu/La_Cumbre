@@ -132,7 +132,7 @@ window.addEventListener('load', () => {
         infoContainer.appendChild(ciudad);
 
         const dificultad = document.createElement('p');
-        dificultad.innerHTML = '<strong>Dificultad: </strong>' + e.dificultad;
+        dificultad.innerHTML = '<strong>Dificultad: </strong>' + e.dificultad + ' / 10';
         infoContainer.appendChild(dificultad);
 
         const duracion = document.createElement('p');
