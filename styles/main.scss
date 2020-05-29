@@ -50,6 +50,26 @@ body {
     
 }
 
+.groupContainer {
+    height: 800px;
+    color: white;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+
+    & div {
+        margin: 0 30px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+
+        & img {
+            width: 113px;
+        }
+    }
+}
+
 .datos {
     display: flex;
     flex-flow: row;
