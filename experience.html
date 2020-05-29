@@ -12,31 +12,39 @@
         <a href="./perfil.html">Mi Perfil</a>
     </nav>
 
-    <h1>Preferencias</h1>
-    <div class="container">    
+    <h1>Preferencias</h1>   
+
+    <div>
+        <h2>¿Estarías dispuesto a salir de tu ciudad para realizar la caminata?</h2>
         <div>
-            <div>
-                <h2>Pregunta 1</h2>
-                <input type="range" name="" id="" min="1" max="10" step="1" value="5">
-            </div>
-    
-            <div>
-                <h2>Pregunta 3</h2>
-                <input type="range" name="" id="" min="1" max="10" step="1" value="5">
-            </div>
+            <label for="out_yes">Sí</label>
+            <input type="radio" name="out" id="out_yes">
         </div>
 
         <div>
-            <div>
-                <h2>Pregunta 2</h2>
-                <input type="range" name="" id="" min="1" max="10" step="1" value="5">
-            </div>
-    
-            <div>
-                <h2>Pregunta 4</h2>
-                <input type="range" name="" id="" min="1" max="10" step="1" value="5">
-            </div>
+            <label for="out_no">No</label>
+            <input type="radio" name="out" id="out_no">
         </div>
     </div>
+
+    <div>
+        <h2>Define del 1 al 10, ¿Qué dificultad te gustaría para la caminata?</h2>
+        <input type="range" name="" id="difficulty" min="1" max="10" step="1" value="5">
+    </div>
+
+
+
+    <div>
+        <h2>Define del 1 al 10, ¿Qué tan dispuesto estarías a que la caminata dure más de un día?</h2>
+        <input type="range" name="" id="" min="1" max="10" step="1" value="5">
+    </div>
+
+    <div>
+        <h2>Define del 1 al 10, ¿Qué tan importante es para ti que haya gimnasio en la caminata?</h2>
+        <input type="range" name="" id="" min="1" max="10" step="1" value="5">
+    </div>     
+    
+    <a href="./activities.html">SIGUIENTE</a>
+
 </body>
 </html>
