@@ -110,6 +110,50 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: white;
+}
+
+.datos img {
+  margin-right: 30px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.row * {
+  padding: 5px 10px;
+}
+
+.row img {
+  padding: 0;
+  margin: 0;
+}
+
+.row p, .row h2 {
+  margin: 0;
+}
+
+.friends {
+  padding: 5px 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.54);
+}
+
+.titleCenter {
+  text-align: center;
 }
 
 .button {
@@ -124,6 +168,17 @@ body {
   border: solid 3px white;
   border-radius: 20px;
   font-weight: 700;
+}
+
+.button--add {
+  margin-top: 0;
+  margin-left: 10px;
+  padding: 5px 50px;
+  border-radius: 10px;
+}
+
+.button--final {
+  margin-top: 0;
 }
 
 .button:hover {
@@ -163,6 +218,7 @@ h1 {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  padding: 30px 0;
 }
 
 .inputText {
@@ -180,7 +236,6 @@ h1 {
 }
 
 .inputRange {
-  padding: 5px 20px;
   width: 500px;
 }
 
@@ -197,6 +252,9 @@ h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-bottom: 10px;
 }
 
 .options {
@@ -208,6 +266,7 @@ h1 {
       -ms-flex-flow: row;
           flex-flow: row;
   padding: 0 50px;
+  margin: 0;
 }
 
 .options div {
@@ -316,5 +375,77 @@ h1 {
   padding: 5px 10px;
   text-align: center;
   border-radius: 10px;
+}
+
+.inputRange__ui {
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+.inputRange__ui::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: #A0ADB0;
+}
+
+.inputRange__ui::-webkit-slider-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 14px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4px;
+}
+
+.inputRange__ui::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+.inputRange__ui::-ms-thumb {
+  height: 16px;
+  width: 16px;
+  border-radius: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+.inputRange__ui:focus {
+  outline: none;
+  /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+.inputRange__ui::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  /* Hides the slider so custom styles can be added */
+  border-color: transparent;
+  color: transparent;
+}
+
+.inputRange__opt {
+  color: white;
+  font-size: 12px;
+  padding-left: 8px;
+}
+
+.inputRange__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+  overflow: hidden;
+  margin-top: 6px;
 }
 /*# sourceMappingURL=main.css.map */

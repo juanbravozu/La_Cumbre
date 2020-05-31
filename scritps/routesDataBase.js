@@ -29,7 +29,7 @@ const routesDB = [
         actividades: ["Río", "Escalada"],
         dias: 1,
         duración: 4,
-        informacion: "Esta caminata es recomendada para personas con buena condición física y experiencia en actividades al aire libre. Caminando a través de un bosque de pinos y eucalipto, por un sendero empinado en el que tendrás que, a veces, tendrás que utilizar también las manos para avanzar, hasta llegar a 2900m sobre el nivel del mar, desde donde se puede observar el Alto del Buey. Al regresar, se puede disfrutar de las aguas del Río Pichindé.",
+        informacion: "Esta caminata es recomendada para personas con buena condición física y experiencia en actividades al aire libre. Caminando a través de un bosque de pinos y eucalipto, por un sendero empinado en el que a veces tendrás que utilizar las manos para avanzar, hasta llegar a 2900m sobre el nivel del mar, desde donde se puede observar el Alto del Buey. Al regresar, se puede disfrutar de las aguas del Río Pichindé.",
         enlace: "http://picoloro.co/me-interesa/?ID=4677",
     },
     {
@@ -95,7 +95,7 @@ const routesDB = [
         actividades: ["Río", "Gimnasio"],
         dias: 1,
         duración: 1,
-        informacion: "Este famoso parque contiene un sendero que da la vuelta a todo el lugar, el recorrido es sencillo y sin pendiente. Además, puedes utilizar los lugares de ejercicio que dispone el parque, así como las canchas para jugar futbol, baloncesto y otros deportes. Finalmente, uno de los mayores atractivos del parque, es el Río Pance, donde podrás nadar en sus refrescantes aguas.",
+        informacion: "Este famoso parque contiene un sendero que da la vuelta a todo el lugar, el recorrido es sencillo y sin pendiente. Además, puedes utilizar los lugares de ejercicio que dispone el parque, así como las canchas para jugar fútbol, baloncesto y otros deportes. Finalmente, uno de los mayores atractivos del parque, es el Río Pance, donde podrás nadar en sus refrescantes aguas.",
         enlace: "https://www.tripadvisor.co/Attraction_Review-g297475-d8855646-Reviews-Parque_de_La_Salud-Cali_Valle_del_Cauca_Department.html",
     },
     {
