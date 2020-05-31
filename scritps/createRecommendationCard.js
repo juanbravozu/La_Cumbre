@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
         infoContainer.appendChild(dificultad);
 
         const duracion = document.createElement('p');
-        duracion.innerHTML = '<strong>Duración: </strong>' + (e.duracion < 24) ? (e.duracion + ' horas') : (e.duracion/24 + ' días');
+        duracion.innerHTML = '<strong>Duración: </strong>' + (e.duración < 24) ? (e.duración + ' horas') : (e.duración/24 + ' días');
         infoContainer.appendChild(duracion);
 
         const informacion = document.createElement('p');
