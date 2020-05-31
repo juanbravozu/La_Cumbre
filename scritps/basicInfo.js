@@ -1,5 +1,5 @@
 window.addEventListener('load', () => {
-    const next = document.querySelector('button');
+    const next = document.querySelector('.button');
     const man = document.getElementById('man');
     const woman = document.getElementById('woman');
 
@@ -25,6 +25,7 @@ window.addEventListener('load', () => {
             localStorage.setItem('name', name.value);
             localStorage.setItem('age', age.value);
             localStorage.setItem('city', city.value);
+            console.log('HGoli')
 
             if(man.classList.contains('img--active')) {
                 localStorage.setItem('gender', 'Hombre');
