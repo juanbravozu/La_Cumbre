@@ -207,8 +207,9 @@ h1 {
     border-radius: 20px;
     cursor: pointer;
 
-    & img {
+    & .img {
         width: 156px;
+        height: 156px;
     }
 
     & p {

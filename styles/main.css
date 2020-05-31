@@ -288,8 +288,9 @@ h1 {
   cursor: pointer;
 }
 
-.result img {
+.result .img {
   width: 156px;
+  height: 156px;
 }
 
 .result p {
