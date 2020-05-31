@@ -94,7 +94,7 @@ window.addEventListener('load', () => {
                 enlace: e.enlace,
                 actividades: e.actividades,
                 ubicacion: e.ubicacion,
-                duracion: e.duración,
+                duración: e.duración,
                 dificultad: e.dificultad,
                 informacion: e.informacion,
             })
@@ -109,59 +109,6 @@ window.addEventListener('load', () => {
     const resultContainer = document.querySelector('.result__container');
     resultContainer.innerHTML = "";
     results.forEach((e) => {
-        const resultCard = document.createElement('div');
-        resultCard.classList.add('result');
-        resultContainer.appendChild(resultCard);
-        
-        const imgContainer = document.createElement('div');
-        resultCard.appendChild(imgContainer);
-
-        const img = document.createElement('img');
-        img.setAttribute('src', './assets/routes/'+e.imagen);
-        imgContainer.appendChild(img);
-
-        const infoContainer = document.createElement('div');
-        resultCard.appendChild(infoContainer);
-
-        const nombre = document.createElement('p');
-        nombre.innerHTML = '<strong>Nombre: </strong>' + e.nombre;
-        infoContainer.appendChild(nombre);
-        
-        const ciudad = document.createElement('p');
-        ciudad.innerHTML = '<strong>Ciudad: </strong>' + e.ubicacion;
-        infoContainer.appendChild(ciudad);
-
-        const dificultad = document.createElement('p');
-        dificultad.innerHTML = '<strong>Dificultad: </strong>' + e.dificultad + ' / 10';
-        infoContainer.appendChild(dificultad);
-
-        const duracion = document.createElement('p');
-        duracion.innerHTML = '<strong>Duración: </strong>' + (e.duracion < 24) ? (e.duracion + ' horas') : (e.duracion/24 + ' días');
-        infoContainer.appendChild(duracion);
-
-        const informacion = document.createElement('p');
-        informacion.innerHTML = '<strong>Información: </strong>' + e.informacion;
-        infoContainer.appendChild(informacion);
-
-        const actividadContainer = document.createElement('div');
-        actividadContainer.classList.add('result__activities');
-        imgContainer.appendChild(actividadContainer);
-        e.actividades.forEach((act) => {
-            const actividad = document.createElement('div');
-            actividad.classList.add('actividad');
-            actividadContainer.appendChild(actividad);
-            actividad.innerHTML = act;
-        });
-        /* <div>
-            <img src="./assets/routes/picoLoro.jpg" alt="">
-            <div>
-                <p><strong>Nombre: </strong>Pico de Loro</p>
-                <p><strong>Ciudad: </strong>Cali</p>
-                <p><strong>Dificultad: </strong>7 / 10</p>
-                <p><strong>Duración: </strong>4 horas</p>
-                <p><strong>Información: </strong>Partiendo a 1718m sobre el nivel del mar, te espera una caminata de aproximadamente 4 horas por los farallones de Cali que se eleva hasta los 2860m sobre el nivel del mar. Realizar esta caminata requiere reservación.</p>
-                <div class="activity">Mirador</div>
-            </div>
-        </div> */
+        createCard(e, resultContainer);
     });
 });
