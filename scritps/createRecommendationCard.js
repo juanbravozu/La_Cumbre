@@ -14,8 +14,9 @@ window.addEventListener('load', () => {
         const imgContainer = document.createElement('div');
         resultCard.appendChild(imgContainer);
 
-        const img = document.createElement('img');
-        img.setAttribute('src', './assets/routes/'+e.imagen);
+        const img = document.createElement('div');
+        img.classList.add('img');
+        img.style.backgroundImage = "url('../assets/routes/"+e.imagen+"')";
         imgContainer.appendChild(img);
 
         const infoContainer = document.createElement('div');
@@ -34,7 +35,13 @@ window.addEventListener('load', () => {
         infoContainer.appendChild(dificultad);
 
         const duracion = document.createElement('p');
-        duracion.innerHTML = '<strong>Duración: </strong>' + (e.duración < 24) ? (e.duración + ' horas') : (e.duración/24 + ' días');
+        let duracionContent = '';
+        if(e.duración < 24) {
+            duracionContent = e.duración + ' horas';
+        } else {
+            duracionContent = e.duración/24 + ' días';
+        }
+        duracion.innerHTML = '<strong>Duración: </strong>' + duracionContent;
         infoContainer.appendChild(duracion);
 
         const informacion = document.createElement('p');
