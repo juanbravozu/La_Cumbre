@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
 
         const img = document.createElement('div');
         img.classList.add('img');
-        img.style.backgroundImage = "url('../assets/routes/"+e.imagen+"')";
+        img.style.backgroundImage = "url('./assets/routes/"+e.imagen+"')";
         imgContainer.appendChild(img);
 
         const infoContainer = document.createElement('div');
