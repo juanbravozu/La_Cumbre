@@ -70,7 +70,7 @@ const routesDB = [
         dificultad: 3,
         ubicacion: "Cali",
         imagen: "tresCruces.jpg",
-        actividades: ["Gimansio", "Mirador"],
+        actividades: ["Gimnasio", "Mirador"],
         dias: 1,
         duración: 2,
         informacion: "Una de las caminatas más famosas de Cali, en donde es tradición para algunos realizarla cada domingo. Con una dificultad relativamente baja y de fácil acceso, esta es una ruta muy recomendada para cualquiera que quiera hacer un poco de ejercicio y tener una excelente vista de la ciudad.",
