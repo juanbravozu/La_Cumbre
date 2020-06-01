@@ -17,29 +17,32 @@
         </nav>
     </div>
 
-    <h1>Perfil</h1>
+    
    <div class="container">
-        <img id="profileImg" src="./assets/manIcon.png" alt="">
+        <h1 class="recommendationTitle">Perfil</h1>
+        <div class="datos">
+                <img id="profileImg" src="./assets/manIcon.png" alt="">
+            <div>
+                <div class="row">
+                    <h2 id="name"></h2>
+                    <p><span id="age"></span> años</p>
+                </div>
 
-        <div>
-            <div>
-                <h2 id="name"></h2>
-                <p><span id="age"></span> años</p>
-            </div>
-
-            <div>
-                <img src="./assets/mdi_trending_up.svg" alt="">
-                <p>Nivel de dificultad</p>
-                <p id="difficulty"></p>
-            </div>
-            
-            <div>
-                <img src="./assets/mdi_location_on.svg" alt="">
-                <p id="city"></p>
+                <div class="row">
+                    <img src="./assets/mdi_trending_up.svg" alt="">
+                    <p>Nivel de dificultad</p>
+                    <p id="difficulty"></p>
+                </div>
+                
+                <div class="row">
+                    <img src="./assets/mdi_location_on.svg" alt="">
+                    <p id="city"></p>
+                </div>
             </div>
         </div>
+        
 
-        <a href="./datos.html">Editar</a>
+        <a href="./datos.html" class="button">Editar</a>
    </div>
 
    <script src="./scritps/profile.js"></script>

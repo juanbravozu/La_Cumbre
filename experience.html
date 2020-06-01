@@ -12,7 +12,7 @@
         <img src="./assets/logo_line.svg" alt="logo">
         <nav class="menu">
             <a href="index.html">Inicio</a>
-            <a href="./rutas.html">Explorar</a>
+            <a href="./explore.html">Explorar</a>
             <a href="./perfil.html">Mi Perfil</a>
         </nav>
     </div>
@@ -38,17 +38,66 @@
 
     <div class="question">
         <p>Define del 1 al 10, ¿Qué dificultad te gustaría para la caminata?</p>
-        <input type="range" name="" id="difficulty" min="1" max="10" step="1" value="5" class="inputRange">
+        <!-- <input type="range" name="" id="difficulty" min="1" max="10" step="1" value="5" class="inputRange"> -->
+        <div class="inputRange">
+            <datalist class="inputRange__list" >
+                <option class="inputRange__opt">1</option>
+                <option class="inputRange__opt">2</option>
+                <option class="inputRange__opt">3</option>
+                <option class="inputRange__opt">4</option>
+                <option class="inputRange__opt">5</option>
+                <option class="inputRange__opt">6</option>
+                <option class="inputRange__opt">7</option>
+                <option class="inputRange__opt">8</option>
+                <option class="inputRange__opt">9</option>
+                <option class="inputRange__opt">10</option>
+            </datalist>
+            <input class="inputRange__ui" id="difficulty" type="range" min="1" max="10" value="5" step="1">
+            
+        </div>
     </div>
 
     <div class="question">
         <p>Define del 1 al 10, ¿Qué tan dispuesto estarías a que la caminata dure más de un día?</p>
-        <input type="range" name="" id="days" min="1" max="10" step="1" value="5" class="inputRange">
+        <!-- <input type="range" name="" id="days" min="1" max="10" step="1" value="5" class="inputRange"> -->
+                <div class="inputRange">
+                    <datalist class="inputRange__list" >
+                        <option class="inputRange__opt">1</option>
+                        <option class="inputRange__opt">2</option>
+                        <option class="inputRange__opt">3</option>
+                        <option class="inputRange__opt">4</option>
+                        <option class="inputRange__opt">5</option>
+                        <option class="inputRange__opt">6</option>
+                        <option class="inputRange__opt">7</option>
+                        <option class="inputRange__opt">8</option>
+                        <option class="inputRange__opt">9</option>
+                        <option class="inputRange__opt">10</option>
+                    </datalist>
+                    <input class="inputRange__ui" id="days" type="range" min="1" max="10" value="5" step="1">
+                    
+                </div>
+                
     </div>
 
     <div class="question">
         <p>Define del 1 al 10, ¿Qué tan importante es para ti que haya gimnasio en la caminata?</p>
-        <input type="range" name="" id="gym" min="1" max="10" step="1" value="5" class="inputRange">
+        <!-- <input type="range" name="" id="gym" min="1" max="10" step="1" value="5" class="inputRange"> -->
+        <div class="inputRange">
+            <datalist class="inputRange__list" >
+                <option class="inputRange__opt">1</option>
+                <option class="inputRange__opt">2</option>
+                <option class="inputRange__opt">3</option>
+                <option class="inputRange__opt">4</option>
+                <option class="inputRange__opt">5</option>
+                <option class="inputRange__opt">6</option>
+                <option class="inputRange__opt">7</option>
+                <option class="inputRange__opt">8</option>
+                <option class="inputRange__opt">9</option>
+                <option class="inputRange__opt">10</option>
+            </datalist>
+            <input class="inputRange__ui" id="gym" type="range" min="1" max="10" value="5" step="1">
+            
+        </div>
     </div>     
     
     <button class="button">SIGUIENTE</button>
